@@ -1,0 +1,151 @@
+.consultas__data {
+  width: 360px;
+  height: 42px;
+  flex-shrink: 0;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.consultas {
+  margin: 0px 5vw;
+}
+.consulta__titulo {
+  color: #464646;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+.paciente-nome {
+  color: #464646;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+.conteiner-consulta {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  column-gap: 2vw;
+  justify-content: center;
+}
+
+.consulta__card {
+  background: var(--fundo-card);
+  display: flex;
+  flex-direction: column;
+  width: 328px;
+  height: 160px;
+  padding: 16px 16px 0;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+.consulta__card-titulo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.consulta__card-paciente {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.consulta__card-paciente > img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 16px;
+}
+
+.consulta__card-paciente > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.consulta__card-titulo .consulta__card-chat {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: var(--cinza-secundario);
+  background-image: url("../img/icones/Chat.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.local-consulta {
+  font-size: 12px;
+  color: var(--texto-claro);
+  display: flex;
+}
+
+.consulta__card-paciente span > span {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.consulta__card-paciente span > span.camera {
+  background-image: url("../img/icones/Camera.svg");
+}
+.consulta__card-paciente span > span.mapa {
+  background-image: url("../img/icones/Pin.svg");
+}
+
+.consulta__card-conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 82px;
+  border-top: 1px solid #46464619;
+}
+
+.consulta__card-conteudo p {
+  font-size: 12px;
+  margin: 8px 0;
+}
+
+.consulta__horario {
+  color: #464646;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+}
+
+.consulta__card-chat {
+  width: 328px;
+  height: 1px;
+  flex-shrink: 0;
+  opacity: 0.1;
+  background: #464646;
+}
+
+@media screen and (min-width: 1366px) {
+  .conteiner-consulta {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  main {
+    background: var(--fundo);
+  }
+}

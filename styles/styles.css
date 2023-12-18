@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans:wght@400;700&family=Krona+One&family=Montserrat:wght@400;500;700&family=Poppins:wght@300;400;500;700&display=swap");
+
+@import url("./consultas.css");
+@import url("./botoes.css");
+@import url("./rodape.css");
+@import url("./botao-flutuante.css");
+@import url("./reset.css");
+
+:root {
+  --texto: #464646;
+  --texto-claro: #a3a3a3;
+  --fundo: linear-gradient(165.96deg, #c3c3c5 0%, #eff0f4 100%);
+  --fundo-card: #fff;
+
+  --cor-primaria: #4894ff;
+  --cor-secundaria: #ffb050;
+  --branco: #fff;
+  --cinza: #ececec;
+  --cinza-secundario: #f6f6f6;
+}
+
+.content {
+  background: var(--fundo);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+html,
+body,
+.content {
+  min-height: 100%;
+}
+
+.conteiner-home {
+  display: flex;
+  align-items: center;
+  height: 110px;
+  margin: 5vw;
+}
+
+.home__imagem {
+  border-radius: 57px;
+  width: 57px;
+  height: 57px;
+  flex-shrink: 0;
+  margin-right: 16px;
+}
+
+.home__titulo {
+  font-size: 22px;
+  color: var(--texto);
+  font-family: "Montserrat";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.home__texto {
+  color: var(--texto-claro);
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.home__informação {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 1366px) {
+  .conteiner-home {
+    margin: 1em;
+  }
+
+  main {
+    margin-left: 15%;
+  }
+}

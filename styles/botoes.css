@@ -1,0 +1,29 @@
+.btn-primario {
+  border: none;
+  background: var(--cor-primaria);
+  color: var(--branco);
+  border-radius: 8px;
+  background: #4894ff;
+  box-shadow: 0px 4px 16px 0px rgba(72, 148, 255, 0.16);
+  width: 296px;
+  height: 48px;
+  flex-shrink: 0;
+}
+.btn-secundario {
+  width: 139px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #ffb050;
+  box-shadow: none;
+  border: none;
+}
+
+.btn-terciario {
+  width: 139px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #ececec;
+  background: #fff;
+}
